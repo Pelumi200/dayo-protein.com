@@ -1,0 +1,145 @@
+.name{
+    color: brown;
+    font-size: 50px;
+  }
+
+  input[type="text"], 
+  input[type="tel"], 
+  input[type="email"] {
+      width: 100%;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  .menu{
+      list-style: none;
+      display: flex;
+      column-gap: 20px;
+      justify-content: center;
+  }
+
+  .menu a{
+      color: rgb(207, 189, 189);
+     text-decoration: none;
+  }
+
+  .menu a:hover{
+    color: rgb(19, 6, 6);
+ 
+}
+
+textarea{
+    width: 100%;
+}
+
+#product img{
+    height: 150px;
+    object-fit: cover;
+}
+
+.comment{
+    margin: 10 0 10 0;
+}
+
+footer{
+    background-color: purple;
+    color: white;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+footer > section{
+    flex: 1;
+}
+
+footer a{
+    color: yellow;
+    text-decoration: none;
+}
+
+footer li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer li:hover{
+    color: yellow;
+}
+
+.foot{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.banner{
+    height: 500px;
+    /*background-image: url(eggs.jpg);*/
+    background-size: cover;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 255, 0.404), rgba(255, 255, 0, 0.253) ), url(eggs.jpg);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    align-items: center;
+}
+
+.banner h1{
+    font-size: 4rem;
+    margin: 0;
+}
+
+.banner p{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.intouch a{
+color: orange;
+}
+
+@media print{
+    #product{
+        background-color: orange !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #product div{
+float: none !important;
+width: 100% !important;
+    }
+    #product{
+        height: fit-content !important;
+    }
+    .contact div{
+        float: none !important;
+        width:100% !important ;
+    }
+    
+    footer{
+        display: block;
+       
+    }
+
+    nav{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      header .desktop{
+        display: none;
+      }
+}
+
